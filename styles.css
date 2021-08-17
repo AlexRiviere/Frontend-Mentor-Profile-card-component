@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+
+}
+
+.card { 
+    position:absolute;
+    display: grid;
+    grid-template: "blcd blcd blcd" 50%
+                   ".... .... ...." 10%
+                   ".... name ...." 20%
+                   "line line line" 1px
+                   "inf1 inf2 inf3" 20%
+                   / 1fr 1.5fr 1fr;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    text-align: center;
+    border: 1px solid hsl(229, 23%, 23%);
+    
+    
+    
+}
+
+.victor-img {
+    grid-area: 1 / 2 / 3 / 3;
+    align-self: end;
+    height: 100px ;
+    width: 100px ;
+    border-radius: 50%;
+    border: solid 5px white ;
+    
+    z-index: 100;
+    padding-bottom: 10px;
+}
+
+.card-background {
+    grid-area: blcd;
+    width: 100.3%;
+    height: 180px;
+    align-self: start;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.name {
+    grid-area: name;
+    font-size: 20px;
+    align-self: end;
+    line-height: 25px;
+}
+
+.place {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.bottom-line {
+    grid-area: line;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+}
+
+.inf1 {
+    grid-area: inf1;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.inf2 {
+    grid-area: inf2;
+    font-weight: 700;
+    line-height: 25px;
+
+}
+
+.inf3 {
+    grid-area: inf3;
+    font-weight: 700;
+    line-height: 25px;
+    
+}
+
+.bottom-circle {
+    position: fixed;
+    bottom: -600px;
+    right: -300px;
+}
+
+.top-circle {
+    position: fixed;
+    top: -600px;
+    left: -300px;
+}
+
+.lastline {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.age {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 18px;
+}
